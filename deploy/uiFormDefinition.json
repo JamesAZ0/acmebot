@@ -1462,7 +1462,7 @@
           },
           "easyDns": {
             "apiToken": "[if(equals(steps('dnsProviderStep').providerType, 'EasyDns'), steps('dnsProviderStep').easyDnsSection.apiToken, '')]",
-            "apiKey": "[if(equals(steps('dnsProviderStep').providerType, 'EasyDns'), steps('dnsProviderStep').easyDnsection.apiKey, '')]"
+            "apiKey": "[if(equals(steps('dnsProviderStep').providerType, 'EasyDns'), steps('dnsProviderStep').easyDnsSection.apiKey, '')]"
           },
           "gandiLiveDns": {
             "apiKey": "[if(equals(steps('dnsProviderStep').providerType, 'GandiLiveDns'), steps('dnsProviderStep').gandiLiveDnsSection.apiKey, '')]"
