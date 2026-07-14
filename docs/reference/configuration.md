@@ -107,6 +107,13 @@ Azure Private DNS uses the app-wide managed identity by default. This setting se
 | `Acmebot__DnsMadeEasy__ApiKey` | DNS Made Easy API key. Acmebot sends it in the `x-dnsme-apiKey` header. |
 | `Acmebot__DnsMadeEasy__SecretKey` | DNS Made Easy secret key used to sign API requests. |
 
+### EasyDNS
+
+| Setting | Description |
+| --- | --- |
+| `Acmebot__EasyDns__ApiToken` | EasyDNS API Token. |
+| `Acmebot__EasyDns__ApiKey` | Easy DNS API key. Acmebot sends it in the authentication header. |
+
 ### Gandi LiveDNS
 
 | Setting | Description |

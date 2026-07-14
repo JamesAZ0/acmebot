@@ -38,6 +38,7 @@ Reference: [Use Key Vault references in App Service and Azure Functions](https:/
 | Cloudflare | `Acmebot__Cloudflare` | `ApiToken` | 10 seconds |
 | Custom DNS | `Acmebot__CustomDns` | `Endpoint`, `ApiKey` | 180 seconds (configurable via `PropagationSeconds`) |
 | DNS Made Easy | `Acmebot__DnsMadeEasy` | `ApiKey`, `SecretKey` | 30 seconds |
+| EasyDns | `Acmebot__EasyDns` | `ApiToken`, `ApiKey` | 60 seconds |
 | Gandi LiveDNS | `Acmebot__GandiLiveDns` | `ApiKey` | 300 seconds |
 | GoDaddy | `Acmebot__GoDaddy` | `ApiKey`, `ApiSecret` | 600 seconds |
 | Google Cloud DNS | `Acmebot__GoogleDns` | `KeyFile64` or `ProjectId`, `PoolProvider`, `ServiceAccount` | 60 seconds |
