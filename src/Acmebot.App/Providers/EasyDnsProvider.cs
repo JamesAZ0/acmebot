@@ -63,7 +63,7 @@ public class EasyDnsProvider(EasyDnsOptions options) : IDnsProvider
         {
             _httpClient = new HttpClient(new BasicAuthHandler(apiToken, apiKey))
             {
-                BaseAddress = new Uri("https://sandbox.rest.easydns.net/")
+                BaseAddress = new Uri("https://rest.easydns.net/")
             };
 
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
