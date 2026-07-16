@@ -102,14 +102,14 @@ public class EasyDnsProvider(EasyDnsOptions options) : IDnsProvider
 
         public async Task DeleteRecordAsync(string zone, long recordId, CancellationToken cancellationToken = default)
         {
-            var response = await _httpClient.DeleteAsync($"zones/async/ux/records/{zone}/{recordId}", cancellationToken);
+            var response = await _httpClient.DeleteAsync($"zones/records/{zone}/{recordId}", cancellationToken);
 
             response.EnsureSuccessStatusCode();
         }
 
         public async Task CreateRecordAsync(string zone, RecordParam txtRecord, CancellationToken cancellationToken = default)
         {
-            var response = await _httpClient.PutAsJsonAsync($"zones/async/ux/records/add/{zone}/{txtRecord.Type}", txtRecord, cancellationToken);
+            var response = await _httpClient.PutAsJsonAsync($"zones/records/add/{zone}/{txtRecord.Type}", txtRecord, cancellationToken);
 
             response.EnsureSuccessStatusCode();
         }
