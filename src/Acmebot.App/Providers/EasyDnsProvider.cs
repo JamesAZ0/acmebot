@@ -67,6 +67,7 @@ public class EasyDnsProvider(EasyDnsOptions options) : IDnsProvider
             };
 
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("Acmebot-EasyDnsProvider", "1.0"));
         }
 
         private readonly HttpClient _httpClient;
