@@ -834,10 +834,10 @@
                   "name": "apiToken",
                   "type": "Microsoft.Common.PasswordBox",
                   "label": {
-                    "password": "API Token",
-                    "confirmPassword": "Confirm API Token"
+                    "password": "API token",
+                    "confirmPassword": "Confirm API token"
                   },
-                  "toolTip": "EasyDNS API Token.",
+                  "toolTip": "EasyDNS API token.",
                   "constraints": {
                     "required": true
                   },

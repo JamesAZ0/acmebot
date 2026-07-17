@@ -182,6 +182,20 @@ Acmebot__DnsMadeEasy__ApiKey=<api-key>
 Acmebot__DnsMadeEasy__SecretKey=<secret-key>
 ```
 
+## EasyDNS
+
+Use EasyDNS API credentials that can list domains and manage DNS records.
+
+| Option | Description |
+| --- | --- |
+| `ApiToken` | EasyDNS API token. |
+| `ApiKey` | EasyDNS API key. Acmebot sends `ApiToken:ApiKey` with the `basic` authentication scheme. |
+
+```text
+Acmebot__EasyDns__ApiToken=<api-token>
+Acmebot__EasyDns__ApiKey=<api-key>
+```
+
 ## Gandi LiveDNS
 
 Use a Gandi LiveDNS API key with access to the domains Acmebot should manage.
